@@ -77,11 +77,11 @@ Displays detailed information about network configurations of the computer.
 
 ![image](https://github.com/user-attachments/assets/bf90035e-e555-46e7-888b-2045246219f0)
 
->Primary DNS suffix:
+>**Primary DNS suffix:**
 
 It is the domain name when attached to a network organisation.
 
->Node type:
+>**Node type:**
 
 It denotes the how the computer communicates with other computers in the network. The four types: 
 - Broadcast – B node
@@ -89,42 +89,42 @@ It denotes the how the computer communicates with other computers in the network
 - Mixed – M node (B+P)
 - Hybrid – H node (B+P in reverse)
 
->IP routing:
+>**IP routing:**
 
 Enabled/Disabled shows if routing the IP packets between different network segments is allowed or not.
 
->WINS proxy:
+>**WINS proxy:**
 
 It is used to resolve the names of hosts to IP addresses in intranets. WINS stands for Windows Internet Name Service.
 
->Description:
+>**Description:**
 
 Description of an adapter describes the type, name and brand of the physical driver or hardware adapter in the computer.
 
->Physical address:
+>**Physical address:**
 
 Physical address is the unique MAC address provided by the manufacturer for that particular adapter.
 
->DHCP:
+>**DHCP:**
 
 Dynamic Host Configuration Protocol is used to automatically assign IP address to devices on a network. If enabled, DHCP server allocates the address. Else, static IP address is used.
 
->Autoconfiguration:
+>**Autoconfiguration:**
 
 Even if DHCP is unavailable, IP address is configured automatically by the network adapter when enabled. If disabled, the adapter cannot assign address to itself. Lease obtained and expires denotes the validity period of the IP address assigned by the DHCP server.
 
->DHCP server:
+>**DHCP server:**
 
 The IP address of the DHCP server that provided the IP configuration for that adapter.
 
->DHCPv6 IAID:
+>**DHCPv6 IAID:**
 
 Identity Association Identifier: the unique ID that identifies the network interface on the client system.
 
->DHCPv6 Client DUID:
+>**DHCPv6 Client DUID:**
 
 DHCP Unique Identifier. ID used to identify the client system across all networks.
 
->NetBIOS over TCP/IP:
+>**NetBIOS over TCP/IP:**
 
 NetBIOS allows different computers to communicate and access shared resources.
