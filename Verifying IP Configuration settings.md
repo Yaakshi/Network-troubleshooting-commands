@@ -1,6 +1,4 @@
-# Troubleshooting-network-commands
-
-# 1. Verifying IP configuration settings
+# Verifying IP configuration settings
 
 ```> ipconfig```
 
