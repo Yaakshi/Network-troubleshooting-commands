@@ -71,7 +71,7 @@ Subnetting means to partition a single large network into smaller sub-networks. 
 the device that connects local network to other networks and the Internet. The address is the network router’s IP address.
 
 
-```ipconfig/all```
+```> ipconfig/all```
 
 Displays detailed information about network configurations of the computer.
 
@@ -128,3 +128,81 @@ DHCP Unique Identifier. ID used to identify the client system across all network
 >**NetBIOS over TCP/IP:**
 
 NetBIOS allows different computers to communicate and access shared resources.
+
+```> ipconfig/renew```
+
+This command refreshes the IP address configuration. Current IP address is dropped and a new one is requested from the DHCP server.
+
+![image](https://github.com/user-attachments/assets/cc0d3d16-c046-4358-bc5e-27254dd3d6f0)
+
+Since Ethernet adapter, local connections and Bluetooth are not connected, renew operation cannot be performed. 
+
+```> ipconfig/release```
+
+It will discard all the IP addresses of all the adapters.
+
+![image](https://github.com/user-attachments/assets/95f2b025-71f2-48a2-8763-9dfacf0b1e36)
+
+There is no IPv4 address associated with the adapters.
+
+```> ipconfig/flushdns```
+
+Flushdns is used to clear the DNS cache on the computer.
+
+![image](https://github.com/user-attachments/assets/f6e4d32c-67ac-4a79-bd8d-22e70dff1e4e)
+
+DNS cache stores recently accessed domain names for quickly resolving domain names to IP addresses. It is cleared completely and successfully.
+
+``` > ipconfig/displaydns```
+
+It is used to view the DNS cache.
+
+![image](https://github.com/user-attachments/assets/2b8af8f5-0152-4f9a-be0a-9054cee0e610)
+
+Since DNS was flushed, the records are less. It displays:
+- domain name
+- the type of record – 1 maps domain name to IPv4 address, 2 maps to IPv6 address, 15 specifies mail servers, etc. 
+- The time to live (in seconds) is the validity of the record in the cache. 
+- Section denotes where the record was found.
+	- Answer – actual answer to query
+	- Authority – information about authoritative DNS servers
+	- Additional – extra information
+- A (host) record denotes the actual IPv4 address it resolves to.
+- PTR record – for reverse DNS lookup – map IP address to domain name
+
+```> ipconfig/registerdns```
+
+It is used to manually register DNS names and IP addresses of a computer in DNS server.
+
+![image](https://github.com/user-attachments/assets/78eb0266-15e8-4592-8a2e-68b502c7c4b1)
+
+It can be verified using nslookup or dig commands.
+
+```> ipconfig/showclassid```
+
+It will display the DHCP class ID for the adapter. This command works on networks with a DHCP server. This command works mostly in a business or organisational network and not a home network.
+
+![image](https://github.com/user-attachments/assets/7c688807-15ab-4dc6-a0cf-1d3766e74ac0)
+
+Currently, we are connected to a home network, hence, there is no DHCP server in the network.
+
+```> ipconfig/setclassid```
+
+It is used to set the DHCP class ID for the adapter.
+
+![image](https://github.com/user-attachments/assets/2ec56ce2-6944-4c20-b5e4-e05581fda7db)
+
+The ID helps to distinguish between DHCP clients in the same network.
+
+```> ipconfig/?```
+
+It acts like a manual for the command entered. displays all the possible options that can be along with the ipconfig command and a brief description about their usage.
+
+![Uploading image.png…]()
+
+
+
+
+
+
+
